@@ -73,6 +73,10 @@ input{
     height: 30px;
 }
 
+.item-buttons {
+    
+}
+
 .clear-items button{
     background: none;
     border: none;

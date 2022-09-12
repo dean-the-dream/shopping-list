@@ -1,5 +1,6 @@
 const itemList = document.querySelector('.items-list');
 const submitButton = document.querySelector("button");
+const clearButton = document.querySelector(".clear-items")
 function addItem (e) {
     e.preventDefault();
     let newInput = document.querySelector('input');
@@ -27,12 +28,13 @@ function notify(){
     notice.style = "opacity:100%"
 }
 
-function removeItem (task) {
+function removeAllItems () {
+    itemList.innerHTML = "";
 
 }
 
 submitButton.addEventListener("click", addItem)
-// submitButton.addEventListener("click", notify)
+clearButton.addEventListener("click", removeAllItems)
 // itemList.addEventListener("click", (e) => {
 //     if(e.target.d)
 // })
