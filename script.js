@@ -21,7 +21,6 @@ function addItem (e) {
     console.log(e);
 }
 
-
 function notify(){
     let notice = document.querySelector(".notice");
     console.log(notice)
@@ -34,7 +33,4 @@ function removeAllItems () {
 }
 
 submitButton.addEventListener("click", addItem)
-clearButton.addEventListener("click", removeAllItems)
-// itemList.addEventListener("click", (e) => {
-//     if(e.target.d)
-// })
+clearButton.addEventListener("click", () => itemList.innerHTML = "")
