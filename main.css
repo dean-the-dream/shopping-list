@@ -24,6 +24,7 @@ main{
 }
 
 .notice{
+    opacity: 0%;
     background-color: #D4EDDA;
     border-radius: 5px;
     color:rgb(94, 94, 94);
